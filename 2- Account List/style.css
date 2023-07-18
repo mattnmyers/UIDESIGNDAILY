@@ -1,0 +1,138 @@
+body {
+    background: #EDECFB;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background: white;
+    width: 1000px;
+    height: 650px;
+    padding: 100px;
+    border-radius: 30px;
+    box-shadow:  20px 20px 60px #B5A9BC,
+                -20px -20px 60px #ffffff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Search Element*/
+
+.searchbox {
+    margin: auto 0;
+    padding: 10px;
+    border: 1px solid #8899E7;
+    border-radius: 7px;
+    font-size: 1rem;
+}
+
+#search {
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* Profile Element*/
+.profilebox {
+    display: flex;
+    width: 200px;
+    font-size: 1.6rem;
+}
+
+#name {
+    margin-left: auto;
+}
+
+#name span {
+    font-weight: 500;
+    color: white;
+    padding: 20px;
+    border: solid 1px #8899E7;
+    background: #8899E7;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#name span:hover {
+    background: white;
+    border: 1px solid #8899E7;
+    color: #8899E7;
+}
+
+#bell {
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+/*Results*/
+
+.account-list {
+    display: inline;
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.result:hover {
+    background: rgba(181, 169, 188, 0.4);
+}
+
+
+.icon {
+    font-size: 2.5rem;
+    padding: 15px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.name {
+    font-size: 1.5rem;
+    line-height: 2px;
+}
+
+.url {
+    line-height: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.number {
+    margin-right: 200px;
+}
+
+#dropbox {
+    color: #3d9ae8;
+}
+
+#pinterest {
+    color: #E60023
+}
+
+#microsoft {
+    color: #00A4EF
+}
