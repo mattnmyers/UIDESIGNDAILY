@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #f3f3f9;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    height: 500px;
+    width: 500px;
+    border-radius: 15px;
+    -webkit-box-shadow: 5px 6px 15px 5px rgba(0,0,0,0.33); 
+    box-shadow: 5px 6px 15px 5px rgba(0,0,0,0.33);
+    padding: 80px 50px;;
+}
+
+h1 {
+    color: #1D3153;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.account {
+    display: flex;
+    color: #1D3153;
+}
+
+.account img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.details {
+    margin: auto 20px;
+}
+
+.details h3 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#subtitle {
+    margin-top: 50px;
+    color: #1D3153;
+    font-weight: bold;
+}
+
+.password-box {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 20px 0px;
+}
+
+.input {
+    border: solid #1D3153 1px;
+    border-radius: 10px;
+    height: 60%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.icon {
+    font-size: 20px;
+    color: #1D3153;
+}
+
+#password {
+  font-size: 24px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+
+.buttons {
+  display: flex;
+  align-items: center;
+  width: 84%;
+  margin-bottom: 60px;
+}
+
+.buttons p {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+#continue {
+  margin-left: auto;
+  background-color: #1D3153;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.switch input
+{
+  display: none;
+}
+
+.switch 
+{
+  display: inline-block;
+  width: 60px; /*=w*/
+  height: 30px; /*=h*/
+  margin: 4px;
+  position: relative;
+}
+
+.slider
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
+  box-shadow: 0 0 0 2px #1D3153, 0 0 4px #1D3153;
+  cursor: pointer;
+  border: 2px solid transparent;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.slider:before
+{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #1D3153;
+  border-radius: 30px;
+  transform: translateX(-30px); /*translateX(-(w-h))*/
+  transition: 0.2s;
+}
+
+input:checked + .slider:before
+{
+  transform: translateX(30px); /*translateX(w-h)*/
+  background-color: #B96449;
+}
+
+input:checked + .slider
+{
+  box-shadow: 0 0 0 2px #B96449, 0 0 8px #B96449;
+}
+
+
+#reset {
+  font-size: 18px;
+  text-decoration: underline;
+  color: #1D3153;
+  font-weight: bold;
+}
